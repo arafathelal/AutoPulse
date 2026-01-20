@@ -1,0 +1,119 @@
+/* ---------------- Contact Page ---------------- */
+
+/* Main wrapper */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Card-style layout */
+.contact-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Page Title */
+.contact-card h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contact info paragraph */
+.contact-card p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* Form styling */
+.contact-card form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-card form input[type="text"],
+.contact-card form input[type="email"],
+.contact-card form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact-card form input[type="text"]:focus,
+.contact-card form input[type="email"]:focus,
+.contact-card form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-card form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button */
+.contact-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Success & Error Messages */
+.contact-card .success-message {
+    margin-bottom: 20px;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-card .error-messages {
+    margin-bottom: 20px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.contact-card .error-messages ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+}

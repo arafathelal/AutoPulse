@@ -1,0 +1,93 @@
+/* public/CSS/auth.css
+   Styles for authentication pages (login/register)
+   Place this file at: C:\xampp\htdocs\sawrob\public\CSS\auth.css
+*/
+
+.auth-container {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 12px;
+}
+
+.auth-card {
+  width:100%;
+  max-width:420px;
+  background:#ffffff;
+  border-radius:10px;
+  padding:24px;
+  box-shadow: 0 10px 30px rgba(6,22,34,0.08);
+  border:1px solid #eef3f6;
+}
+
+.auth-card h2 {
+  margin-bottom:16px;
+  font-size:1.25rem;
+  color:#053246;
+}
+
+.auth-form .form-row {
+  margin-bottom:12px;
+}
+
+.auth-form label {
+  display:block;
+  margin-bottom:6px;
+  font-weight:600;
+  color:#34414a;
+  font-size:.95rem;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"],
+.auth-form input[type="text"] {
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #d7dde3;
+  font-size:1rem;
+  background:#fff;
+  transition: border-color .12s, box-shadow .12s;
+}
+
+.auth-form input:focus {
+  outline:none;
+  border-color:#0b84a5;
+  box-shadow:0 0 0 4px rgba(11,132,165,0.06);
+}
+
+.auth-actions {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:14px;
+}
+
+.auth-actions .button {
+  flex: 1 0 auto;
+}
+
+/* small link area */
+.auth-links {
+  margin-top:10px;
+  font-size:.95rem;
+  color:#4a5963;
+}
+.auth-links a { color:#0b84a5; text-decoration:none; }
+.auth-links a:hover { text-decoration:underline; }
+
+/* message / error */
+.auth-error {
+  margin-top:12px;
+  padding:10px 12px;
+  border-radius:6px;
+  background:#fff1f2;
+  color:#7d1419;
+  border:1px solid #f3c8cc;
+}
+
+/* Responsive tweaks */
+@media (max-width:480px) {
+  .auth-card { padding:18px; margin: 0 10px; }
+}
